@@ -11,14 +11,12 @@ width */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color:brown;
     color: #333;
 }
 
 /* CONTAINER: Keeps content centered and readable */
-main,
-header,
-footer {
+main,header,footer {
     max-width: 1100px;
     margin: 0 auto;
     /* Centers the box horizontally */
@@ -126,3 +124,4 @@ button:hover {
         /* Add vertical spacing */
     }
 }
+/* SECTIONS */
