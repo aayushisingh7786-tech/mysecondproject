@@ -21,6 +21,17 @@
     </header>
     <hr>
     <main>
+        <section id="todo-app">
+            <h2>My To-Do List</h2>
+            <div class="todo-wrapper">
+                <input type="text" id="taskInput" placeholder="Add a new task...">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="taskList">
+            </ul>
+            <button onclick="clearTasks()" style="background-color: #dc3545; margin-top: 10px;">Clear
+                All</button>
+        </section>
         <section id="about">
             <h2>About Me</h2>
             <p>
@@ -74,5 +85,6 @@
                         <a href="#about">Back to Top</a>
                     </p>
                 </footer>
+                <script src="script.js"></script>
 </body>
 </html>
