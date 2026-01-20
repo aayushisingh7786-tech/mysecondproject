@@ -16,3 +16,16 @@
 </body>
 
 </html>
+<h1>Student List</h1>
+<ul>
+    {% for student in students %}
+    <li>
+        <strong>{{ student.name }}</strong> - {{ student.course }} (Roll No: {{ student.roll_no }})
+    </li>
+    {% empty %}
+    <li>No students found yet.</li>
+    {% endfor %}
+</ul>
+</body>
+
+</html>

@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import Student # Import the model
 
 # View for the Home Page
 def home(request):
@@ -24,3 +25,10 @@ def contact(request):
     """
     # Assuming 'contact.html' is in the templates directory of an app
     return render(request, 'contact.html')
+
+
+def home(request):
+    # Fetch ALL students from the database
+    all_students = Student.objects.all()
+    # Send the data to the template inside a 'context' dictionary
+    return render(request, 'home.html', {'students': all_students})
